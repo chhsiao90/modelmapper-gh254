@@ -1,4 +1,4 @@
-package org.modelmapper.gh254.gh254;
+package org.modelmapper.gh254.mod;
 
 public class Request {
     private String id;

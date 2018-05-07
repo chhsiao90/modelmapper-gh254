@@ -1,11 +1,11 @@
-package org.modelmapper.gh254.gh254;
+package org.modelmapper.gh254.web;
 
 import org.modelmapper.ModelMapper;
+import org.modelmapper.gh254.mod.Request;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
@@ -20,6 +20,6 @@ public class Gh254Application {
 
 	@RequestMapping
 	public Dto dto() {
-		return modelMapper.map(new Request("1", "chhsiao90@gmail.com"), Dto.class);
+		return modelMapper.map(new Request("2", "chhsiao90@gmail.com"), Dto.class);
 	}
 }

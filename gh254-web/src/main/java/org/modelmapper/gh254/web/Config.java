@@ -1,8 +1,9 @@
-package org.modelmapper.gh254.gh254;
+package org.modelmapper.gh254.web;
 
 import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
+import org.modelmapper.gh254.mod.Request;
 import org.modelmapper.spi.MappingContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +13,7 @@ import java.util.Base64;
 @Configuration
 public class Config {
     @Bean
+    @SuppressWarnings("all")
     public PropertyMap<Request, Dto> propertyMap() {
         return new PropertyMap<Request, Dto>() {
             @Override

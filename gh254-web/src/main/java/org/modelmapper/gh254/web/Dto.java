@@ -1,4 +1,4 @@
-package org.modelmapper.gh254.gh254;
+package org.modelmapper.gh254.web;
 
 public class Dto {
     private String id;
